@@ -2,14 +2,17 @@ import Chartjs from "./Chartjs"
 import Echart from "./Echart"
 import Input from "./Input"
 import { Route, Switch, Link } from "react-router-dom"
+import DataTable from "./DataTable"
+import { Container } from "reactstrap"
 const Home = () => {
     return (
         <div>
+            <Container>
             <nav>
                 <h1>Masukkan Data</h1>
             <Input />
+            <hr/>
                 <ul>
-                    
                     <li>
                         <Link to="/chartjs">Chart JS</Link>
                     </li>
@@ -27,6 +30,7 @@ const Home = () => {
                     <Echart />
                 </Route>
             </Switch>
+            </Container>
         </div>
     )
 }
